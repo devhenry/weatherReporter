@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload = "AutoRefresh(720000)">
+    
+    <div class="container">
+        <div class="app-title">
+            <p>Weather App</p>
+        </div>
+        <div class="notification"> </div>
+        <div class="weather-container" id="bg">
+            <div class="weather-icon">
+                <img src="icons/unknown.png" alt="">
+            </div>
+            <div class="temperature-value" onclick ="checkVoice()" >
+                <p>- °<span>C</span></p>
+            </div>
+            <div class="temperature-description">
+                <p> - </p>
+            </div>
+            <div class="location">
+                <p>-</p>
+            </div>
+            
+        </div>
+        <div>
+            
+            <div class="temp">Temperature Indicator</div>
+
+            
+            <div id="noInternet">Please Check Your Internet Connection</div>
+            
+        </div> 
+
+       
+            
+        
+        <div id="myResult"></div>
+        <div id="myprocessing"></div>
+               
+           
+           
+    </div>  
+    
+    
+    <script src="app.js"></script>
+</body>
+</html>
+
+

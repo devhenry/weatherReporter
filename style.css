@@ -1,0 +1,188 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    
+    background-color: #ffffff;
+}
+
+.container{
+    text-align: center;
+    width: 300px;    
+    background-color:powderblue;
+    
+    
+    display: block;
+    margin:  auto;
+    
+    
+    border-radius: 5px;
+    padding-bottom : 50px;
+
+    
+}
+
+
+.app-title{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px 10px 0 0;
+    
+}
+
+.app-title p{
+    text-align: center;
+    padding: 15px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    color:#ffffff;
+}
+
+.notification{
+    background-color: #f70707;
+    display: none;
+}
+
+.notification p{
+    color: #721c24;
+    font-size: 1.2em;
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.weather-container{
+    width: 300px;
+    height: 260px;
+    background-color: #ffffff;
+    outline:solid;
+}
+
+.weather-icon{
+    width: 300px;
+    height: 128px;
+}
+
+.weather-icon img{
+    display: block;
+    margin: 0 auto;
+}
+
+.temperature-value{
+    width: 300px;
+    height:60px;
+}
+
+.temperature-value p{
+    padding: 0;
+    margin: 0;
+    color: #293251;
+    font-size: 4em;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.temperature-value span{
+    color: #293251;
+    font-size: 0.5em;
+}
+
+
+.temperature-description p{
+    padding: 8px;
+    margin: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+.location p{
+    margin: 0;
+    padding: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+#noInternet {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+  }
+  
+  #noInternet.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+
+
+  /*temperature*/
+  .temp{
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+    margin-top: 10px;
+    box-shadow:  2px 2px 5px 5px;
+    text-align:center;
+    opacity:0.8;
+    animation: beat .4s infinite alternate;
+	transform-origin: center;
+
+  }
+  /* Heart beat animation */
+@keyframes beat{
+	to { transform: scale(1.1); }
+}
+
+ 
+
+.vaBtn{
+ 
+    width:200px;
+    height:35px;
+    margin-top: 15px;
+    cursor: pointer;
+    color:white;
+    background-color: slateblue;
+    border-radius: 5px;
+    border:none;
+    
+
+}
+.vaBtn:hover{
+    box-shadow: 2px 2px 5px 5px;
+
+}
